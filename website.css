@@ -9,6 +9,14 @@ table {
 	border-radius: 5px;
 }
 
+.table1 {
+	display:inline-block;
+}
+
+.table2 {
+	display:inline-block;
+}
+
 img {
 	width: 170px;
 	height: 170px;
@@ -23,16 +31,10 @@ hr {
 }
 
 .box {
-	width: 26em;
+	height: 3em;
+	width: 16em;
 	margin: auto;
 	background-color: white;
-	border-radius: 5px;
-}
-
-.box1 {
-	width: 22em;
-	background-color: white;
-	margin: auto;
 	border-radius: 5px;
 }
 
@@ -52,4 +54,20 @@ hr {
 	width: 7em;
 	background-color: white;
 	border-radius: 5px;
+}
+
+.box5 {
+	height: 3em;
+	width: 11em;
+	background-color: white;
+	border-radius: 5px;
+	margin: auto;
+}
+
+.box6 {
+	height: 3em;
+	width: 7em;
+	background-color: white;
+	border-radius: 5px;
+	margin: auto;
 }
