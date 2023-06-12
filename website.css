@@ -5,9 +5,11 @@ h1 {
 }
 
 .div1 {
+	background-color: orange;
 	columns: 25px 4;
 	height: 500px;
-	border: solid 2px black;
+	border: solid 3px black;
+	border-radius: 5px;
 	float: left;
 	
 }
@@ -39,7 +41,7 @@ hr {
 }
 
 .box {
-	height: 3em;
+	height: 40px;
 	width: 16em;
 	margin: auto;
 	background-color: white;
@@ -65,7 +67,7 @@ hr {
 }
 
 .box5 {
-	height: 3em;
+	height: 40px;
 	width: 11em;
 	background-color: white;
 	border-radius: 5px;
@@ -73,7 +75,7 @@ hr {
 }
 
 .box6 {
-	height: 3em;
+	height: 40px;
 	width: 7em;
 	background-color: white;
 	border-radius: 5px;
