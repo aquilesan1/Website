@@ -1,0 +1,48 @@
+body {
+	
+	background-color: gray;
+}
+
+h1 {
+	
+	color: white;
+}
+
+u {
+	
+	color: white;
+}
+
+table {
+	
+	border: 5px solid white;
+	border-radius: 3px;
+}
+
+img {
+	
+	width: 30%;
+	height: 30%;
+	border: 5px solid white;
+	border-radius: 3px;
+}
+
+p {
+	
+	color: white;
+}
+
+h2 {
+	
+	color: white;
+}
+
+h3 {
+	
+	color: white;
+}
+
+code {
+	
+	color: white;
+}
