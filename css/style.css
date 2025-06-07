@@ -90,3 +90,12 @@ footer > div {
 
 	padding-top: 10px;
 }
+
+@media only screen and (max-width:600px) {
+
+	#image {
+
+		height: 10vh;
+		width: auto;
+	}
+}
