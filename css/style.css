@@ -72,10 +72,21 @@ main {
 	background-color: #cdd3d5;
 }
 
+#image {
+
+    border: 10px solid white;
+	border-radius: 5px;
+}
+
 footer {
 
 	grid-area: Footer;
 	background-color: #879199;
 	height: 15vh;
 	width: auto;
+}
+
+footer > div {
+
+	padding-top: 10px;
 }
