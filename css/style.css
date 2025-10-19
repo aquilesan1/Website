@@ -23,7 +23,7 @@ body {
 	grid-template-rows: auto;
 	grid-template-areas: 
 		"Header Header Header Header"
-		"Main Main Main Main"
+		"Aside Main Main Main"
 		"Footer Footer Footer Footer";
 }
 
@@ -78,6 +78,20 @@ main {
 	border-radius: 5px;
 }
 
+aside {
+
+	grid-area: Aside;
+	display: grid;
+	grid-template-columns: 100%;
+	background-color: limegreen;
+
+}
+
+aside > h1 {
+
+	color: black;
+}
+
 footer {
 
 	grid-area: Footer;
@@ -97,10 +111,5 @@ footer > div {
 
 		height: 200px;
 		width: auto;
-	}
-
-	header {
-
-		height: 25vh;
 	}
 }
