@@ -112,4 +112,9 @@ footer > div {
 		height: 200px;
 		width: auto;
 	}
+
+	aside > h1 {
+
+		height: 1vh;
+	}
 }
