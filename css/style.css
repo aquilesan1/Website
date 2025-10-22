@@ -35,7 +35,7 @@ header {
 	height: 125px;
 	align-items: center;
 	background-color: #879199;
-	border-bottom: 5px solid lightgray;
+	border-bottom: 5px solid #0e0e0e;
 	border-left: 5px solid lightgray;
 	border-top: 5px solid #0e0e0e;
 	border-right: 5px solid #0e0e0e;
