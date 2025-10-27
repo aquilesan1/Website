@@ -49,8 +49,8 @@ header > div {
 
 header > div > a > h1 {
 
-	text-decoration: none;
-	color: limegreen;
+	text-decoration: underline;
+	color: black;
 }
 
 header > nav > menu {
@@ -122,7 +122,7 @@ footer > div {
 
 	#image {
 
-		height: 200px;
+		height: 190px;
 		width: auto;
 	}
 
