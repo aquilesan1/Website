@@ -122,17 +122,12 @@ header, section, main, footer {
 		flex-direction: column;
 		width: 80%;
 	}
-	header {
-
-		display: flex;
-		flex-direction: column;
-	}
 	section {
 		display: flex;
 		flex-direction: column;
 	}
 	main {
-
+		height: 50%;
 		display: flex;
 		flex-direction: column;
 	}
