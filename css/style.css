@@ -117,13 +117,19 @@ header, section, main, footer {
 
 @media only screen and (max-width:600px) {
 
+	body {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+	}
+
 	#image {
 
 		height: 150px;
 		width: auto;
 	}
 
-	aside > h1 {
+	section > h2 {
 
 		font-size: 2vh;
 	}
