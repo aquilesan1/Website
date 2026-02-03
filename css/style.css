@@ -122,6 +122,21 @@ header, section, main, footer {
 		flex-direction: column;
 		width: 80%;
 	}
+	header {
+
+		display: flex;
+	}
+	section {
+		display: flex;
+	}
+	main {
+
+		display: flex;
+	}
+	footer {
+
+		display: flex;
+	}
 
 	#image {
 
