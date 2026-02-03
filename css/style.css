@@ -125,17 +125,21 @@ header, section, main, footer {
 	header {
 
 		display: flex;
+		flex-direction: column;
 	}
 	section {
 		display: flex;
+		flex-direction: column;
 	}
 	main {
 
 		display: flex;
+		flex-direction: column;
 	}
 	footer {
 
 		display: flex;
+		flex-direction: column;
 	}
 
 	#image {
