@@ -115,7 +115,7 @@ header, section, main, footer {
 	padding: 2rem;
 }
 
-@media only screen and (max-width:600px) and (orientation: landscape) {
+@media only screen and (max-width:600px) {
 
 	body {
 		display: flex;
@@ -141,6 +141,31 @@ header, section, main, footer {
 
 		display: flex;
 		flex-direction: column;
+	}
+
+	#image {
+
+		height: 150px;
+		width: auto;
+	}
+
+	section > h2 {
+
+		font-size: 2vh;
+	}
+}
+
+@media only screen and (max-width:600px) and (orientation: landscape) {
+
+	body {
+		width: 80%;
+		display: flex;
+
+	}
+
+	header, section, main, footer {
+
+		display: flex;
 	}
 
 	#image {
