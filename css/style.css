@@ -1,6 +1,6 @@
 html {
 
-	background-image: lightgray url("../imgs/backgroundImg.jpg");
+	background-image: url("../imgs/backgroundImg.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 }
@@ -170,7 +170,7 @@ header, section, main, footer {
 
 	#image {
 
-		height: 100px;
+		height: 20%;
 		width: auto;
 	}
 
