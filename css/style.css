@@ -36,6 +36,7 @@ header {
 	height: 125px;
 	align-items: center;
 	background-color: #696969;
+	background: linear-gradient(silver, black);
 	border-bottom: 5px solid #d3d3d3;
 	border-left: 5px solid #d3d3d3;
 	border-top: 5px solid #0e0e0e;
@@ -43,11 +44,16 @@ header {
 
 }
 
-header > div > a > h1 {
+header > div > a > h1{
 	color: black;
+	text-shadow: 3px 2px white;
 }
 
-header > nav > menu {
+section > h2, section p {
+	color: white;
+}
+
+header > nav > ul {
 
 	display: grid;
 	list-style: none;
@@ -55,7 +61,7 @@ header > nav > menu {
 	margin: 0px;
 }
 
-header > nav > menu > li > a {
+header > nav > ul > li > a {
 
 	color: #0e0e0e;
 }
@@ -65,6 +71,13 @@ section {
 
 	grid-area: section;
 	background-color: #151B54;
+	background-image: url("../imgs/tao.png");
+	background-position: 
+		bottom 0  left 20%;
+	background-size: 
+		30vh;
+	background-repeat: 
+		no-repeat;
 	border-radius: 3px;
 	border-bottom: 5px solid #d3d3d3;
 	border-left: 5px solid #d3d3d3;
@@ -73,36 +86,47 @@ section {
 
 }
 
-section h2, section p {
-
-	color: #f8f8f8;
-}
-
 main {
 
 	grid-area: main;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	height: 80vh;
+	height: 60vh;
 	background-color: #f8f8f8;
+	border-bottom: 5px solid #d3d3d3;
+	border-left: 5px solid #d3d3d3;
+	border-top: 5px solid #0e0e0e;
+	border-right: 5px solid #0e0e0e;
 }
 
 #image {
 
     border: 10px solid black;
 	border-radius: 5px;
+	height: 50vh;
+	width:auto;
 }
 
 footer {
 
 	grid-area: footer;
+	display: flex;
+	align-items: center;
 	background-color: #696969;
-	height: 15vh;
+	background: linear-gradient(silver, black);
+	height: 150px;
 	width: auto;
 	border-bottom: 5px solid #d3d3d3;
 	border-left: 5px solid #d3d3d3;
 	border-top: 5px solid #0e0e0e;
 	border-right: 5px solid #0e0e0e;
+}
+
+footer h2 {
+
+	margin-top: 0px;
 }
 
 footer > div {
@@ -114,6 +138,26 @@ header, section, main, footer {
 
 	padding: 2rem;
 }
+
+textarea {
+
+	height: 80px;
+	width: 200px;
+	border-radius: 5px;
+}
+
+input {
+	color: white;
+	height: 30px;
+	width: auto;
+	background-color: blue;
+	border-radius: 5px;
+}
+
+#toggle-menu, label[for="toggle-menu"] {
+	display: none;
+}
+
 
 @media only screen and (max-width:600px) and (orientation: portrait) {
 
@@ -128,19 +172,55 @@ header, section, main, footer {
 		justify-content: space-between;
 	}
 
+	header nav ul {
+		opacity: 0.95;
+		background-color: #d3d3d3;
+		border: 3px solid #0e0e0e;
+		position: fixed;
+		top: 0px;
+		height: 100%;
+		width: 100%;
+		left: 100%;
+		z-index: 100;
+		transition: left 0.3s ease-in-out;
+	}
+
+	header nav ul li {
+		padding: 2rem;
+	}
+
+	header nav ul li a {
+
+		font-size: 1.5rem;
+	}
+
 	section {
 		display: flex;
 		flex-direction: column;
+		background-size: 10vh;
+		background-position: bottom 0 right 10px;
 	}
+
+	section h2 {
+
+		margin-top: 0px;
+	}
+
 	main {
 		height: 50%;
 		display: flex;
 		flex-direction: column;
 	}
+
+	main div h2 {
+
+		margin-top: 0px;
+	}
+
 	footer {
 
 		display: flex;
-		flex-direction: column;
+		flex-direction: column;										
 	}
 
 	#image {
@@ -152,6 +232,36 @@ header, section, main, footer {
 	section > h2 {
 
 		font-size: 2vh;
+	}
+
+	label[for="toggle-menu"] {
+
+		display: block;
+		font-size: 2rem;
+		position: fixed;
+		top: 20px;
+		z-index: 200;
+	}
+
+	#close {
+
+		font-weight: bold;
+		display: none;
+	}
+
+	#toggle-menu:checked ~ ul {
+
+		left: 15%;
+	}
+
+	#toggle-menu:checked + label #close {
+
+		display: block;
+	}
+
+	#toggle-menu:checked + label #hamburger {
+
+		display: none;
 	}
 }
 
