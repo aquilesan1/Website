@@ -243,6 +243,12 @@ input {
 		z-index: 200;
 	}
 
+	#hamburger {
+
+		font-weight: bold;
+		text-shadow: 2px 2px #f8f8f8;
+	}
+
 	#close {
 
 		font-weight: bold;
